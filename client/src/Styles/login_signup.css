@@ -1,0 +1,80 @@
+.box-shadow {
+  box-shadow: 2px 4px 99px rgba(0, 0, 0, 0.25);
+}
+.company {
+  padding-left: 1rem;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 2rem;
+  color: #da3232;
+}
+.login-img {
+  height: 100%;
+  width: 100%;
+  padding-top: 1.7rem;
+}
+
+.com {
+  font-weight: bold;
+}
+
+.login {
+  font-family: Righteous;
+  font-weight: normal;
+  font-size: 2rem;
+  text-align: left;
+  color: #000000;
+}
+
+.form-border-remove {
+  border: 0;
+  outline: 0;
+  border-bottom: 2px;
+  border-style: groove;
+  border-color: #da3232;
+}
+
+.no-outline:focus {
+  outline: 0;
+  border-color: #da3232;
+  /* box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 4px rgba(218, 50, 50, 0.7); */
+  box-shadow: inset 0 1px 5px rgba(218, 50, 50, 0.7);
+}
+
+.btn-col {
+  background: #da3232;
+  /* box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.25); */
+  border-radius: 8px;   
+  width: 100%;
+}
+
+.right-side {
+  background: linear-gradient(
+    to right,
+    rgba(218, 50, 50, 1) 50%,
+    rgba(206, 105, 73, 1) 100%
+  );
+}
+
+@media screen and (max-width: 769px) {
+  .right-side {
+    display: none;
+  }
+
+  .pl-5 {
+    padding-left: 1% !important;
+  }
+
+  .btn-col {
+    margin-bottom: 20% !important;
+  }
+}
+
+.log-txt-for {
+  font-family: Roboto Condensed;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  color: #ffffff;
+}

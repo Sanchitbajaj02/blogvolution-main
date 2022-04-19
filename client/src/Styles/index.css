@@ -1,0 +1,502 @@
+/* font libraries */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Boogaloo&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nova+Cut&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rasa:wght@300&display=swap");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css");
+@import url("https://maxcdn.bootstrapcdn.com/font-awesome/5.4.0/css/font-awesome.min.css");
+
+/*===== globals =====*/
+@import url("https://fonts.googleapis.com/css2?family=Rasa:wght@300&display=swap");
+
+* {
+  scroll-behavior: smooth;
+}
+
+/* ============ Color definitions starts ============ */
+.bg-black {
+  background-color: #000000 !important;
+}
+
+.bg-dark-red {
+  background-color: #991414 !important;
+}
+
+.text-light-red {
+  color: #ea4232 !important;
+}
+
+.text-dark-red {
+  color: #991414 !important;
+}
+
+.Link-highlight {
+  text-decoration: none;
+  color: #000000 !important;
+}
+.Link-highlight:hover {
+  text-decoration: none;
+  color: #000000;
+}
+/* ============ Color definitions ends ============ */
+
+/* ============ For selection color ============ */
+::selection {
+  color: #fff;
+  /* background-color: #991414; */
+  background-color: rgba(153, 20, 20, 0.9);
+}
+
+/* ============ Blog Page progressbar starts ============ */
+.reading-progress-bar {
+  position: sticky;
+  z-index: 100;
+  height: 8px;
+  top: 0;
+  background-color: #991414;
+}
+/* ============ Blog Page progressbar ends ============ */
+
+/* ================= Page heading starts =================  */
+.format-heading {
+  font-family: Boogaloo;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 80px;
+  color: #000000;
+}
+
+.format-heading-2 {
+  text-align: center;
+  font-family: Nova Cut;
+  font-weight: normal;
+  font-size: 24px;
+  margin-top: 2rem;
+}
+
+/* ================= Page heading ends ================= */
+
+/* ============ Header Section starts ============ */
+.top-right-btns {
+  color: white;
+  justify-content: flex-end;
+}
+
+.small-heading {
+  font-family: Boogaloo;
+  font-style: Regular;
+  font-size: 27px;
+  vertical-align: center;
+  color: rgba(0, 0, 0, 0.53);
+  padding-bottom: 3rem;
+}
+
+.main-menubar {
+  display: flex;
+  justify-content: space-around;
+}
+
+.format-main-menubar {
+  font-family: "Nova Cut";
+  font-size: 1.2rem;
+  padding: 0 1rem;
+}
+/* ============ Header Section ends ============ */
+
+/* ============ Featured Posts starts ============ */
+.featured-post-img {
+  width: 100%;
+  height: 25rem;
+  background-size: cover;
+  background-position: center center;
+  color: white;
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+}
+
+.edit-font {
+  font-family: Rasa;
+  font-style: normal;
+  font-size: 16px;
+  padding: 5px 20px;
+  color: #fff;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+.edit-font:hover {
+  color: #fff;
+}
+
+.black-shadow-box {
+  background-color: rgba(0, 0, 0, 0.4);
+  width: 90%;
+  height: 30%;
+  font-size: 16px;
+  padding: 1rem;
+  border-radius: 8px;
+  text-align: center;
+  margin: 0 auto;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+/* ============ Featured Posts ends ============ */
+
+/* ============ Category Posts starts ============ */
+
+/* Sanchit: Card effect on mouse hover */
+.card-effect-hover {
+  /* box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); */
+  padding: 0.25rem;
+  border-radius: 10px;
+  transition: all 0.3s ease-in-out;
+  align-items: center;
+}
+
+.card-effect-hover:hover {
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.5);
+}
+
+.centered {
+  padding: 0 1rem;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-end;
+  font-weight: bold;
+  font-size: 28px;
+}
+
+/* homepage 3 images banner section css ends here */
+
+.format-card-image {
+  max-width: 100%;
+  height: 18rem;
+  border-radius: 8px;
+  margin: auto;
+}
+
+.format-card-image:hover {
+  box-shadow: 0 0px 2px 1px rgba(25, 25, 26, 0.5);
+}
+
+.format-underline {
+  width: 4rem;
+  border: 2px solid #991414;
+  margin-bottom: 3rem;
+  margin-left: 46.5rem;
+}
+
+.homepage-line-design {
+  border-top: 2px solid rgb(225, 225, 225);
+  border-bottom: 2px solid rgb(225, 225, 225);
+  width: 100%;
+  height: 1.5rem;
+}
+
+.format-health {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  font-family: Nova Cut;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 22px;
+}
+
+.format-health-image {
+  position: absolute;
+  width: 550.01px;
+  height: 404.45px;
+}
+
+.health-section {
+  width: 550px;
+}
+
+.card-body-1 {
+  width: 100%;
+  text-align: center;
+}
+
+.font-format {
+  font-family: Red Hat Text;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  color: #000000;
+}
+
+.format-text-popular {
+  font-family: Nova Cut;
+  font-style: normal;
+  font-weight: normal;
+  margin-top: 5px;
+  font-size: 20px;
+  color: #991414;
+  text-align: center;
+}
+
+.format-text-para {
+  font-family: Nova Cut;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  align-items: center;
+  text-align: center;
+  color: #000000;
+  text-align: center;
+}
+
+.format-text-popular:hover,
+.format-text-para:hover {
+  /* text-decoration:underline; */
+  color: #991414;
+  text-shadow: 0 5px 8px 2px rgba(0, 0, 0, 0.4);
+}
+
+.div-spacing-0 {
+  padding-top: 2rem;
+  padding-left: 4rem;
+  margin-bottom: 4rem;
+}
+
+.format-text-health {
+  font-family: Nova Cut;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+}
+
+.format-text-health-1 {
+  font-family: Red Rose;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 22px;
+  height: 27px;
+  align-items: center;
+  text-align: center;
+  padding-top: 0.5rem;
+  color: #000000;
+}
+
+.line-health {
+  position: absolute;
+  width: 60px;
+  height: 0px;
+  left: 371px;
+  top: 1944px;
+  border: 2px solid #000000;
+}
+
+.temp-line-format {
+  width: 15%;
+  border: 0.5px solid #000000;
+}
+
+.format-div {
+  margin: 4rem 0;
+}
+
+.main-hr-for {
+  width: 100%;
+}
+
+.line-format {
+  border: top bottom #000000;
+  width: 100%;
+  padding-bottom: 0.5rem;
+}
+
+.section-spacing {
+  padding: 3rem 0 2rem 0;
+}
+
+.line-class {
+  width: 6%;
+  border: 1px solid #991414;
+}
+
+/* Styling of login form */
+
+/* .box {
+  height: 672px;
+  width: 1128px;
+  margin-top: 10rem;
+  left: 180px;
+  background: #fff;
+  box-shadow: 0px 4px 99px rgba(0, 0, 0, 0.25);
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 1) 50%,
+    rgba(218, 50, 50, 1) 50%,
+    rgba(206, 105, 73, 1) 100%
+  );
+} */
+
+/* .head {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  color: #da3232;
+} */
+/* 
+.com {
+  font-weight: bolder;
+} */
+
+/* Sign up page styling */
+
+/*-----------------Blog Post Page and categories page styling starts-----------------*/
+
+/* Fonts used in Blog Post Page
+
+font-family: 'Nova Cut', cursive;
+font-family: 'Red Hat Text', sans-serif;
+font-family: 'Red Rose', cursive;
+font-family: 'Redressed', cursive;
+*/
+
+#blogPost .container {
+  margin-bottom: 30px;
+}
+
+#blogPost .container h3 {
+  font-family: "Red Rose", cursive;
+  size: 37px;
+  font-weight: bold;
+}
+
+#blogPost .container .col-md-9 hr {
+  border: 0.5px solid rgba(0, 0, 0, 0.12);
+}
+
+textarea {
+  position: relative;
+  width: 100%;
+  height: auto;
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.62);
+  border: 1px solid rgba(0, 0, 0, 0.72);
+}
+
+/* .row-md-3 hr {
+  border: 0.5px solid #991414;
+  margin-bottom: -1px;
+}
+
+.row-md-3 {
+  text-align: center;
+  margin-bottom: 70px;
+  margin-top: -15px;
+}
+
+.row-md-3 h4 {
+  font-family: "Red Hat Text", sans-serif;
+  size: 26px;
+} */
+
+.forgotpass {
+  text-decoration: none !important;
+  text-align: right !important;
+  color: #da3232;
+}
+.rectangle-nav {
+  width: 100%;
+  margin-bottom: 1.3rem;
+  background: rgba(196, 196, 196, 0.22);
+  border: 1px solid rgba(0, 0, 0, 0.32);
+  box-sizing: border-box;
+}
+
+.fitness-rectangle {
+  font-family: Red Rose;
+  font-weight: bold;
+  font-size: 32px;
+  display: flex;
+  align-items: center;
+  color: #000000;
+  justify-content: center;
+}
+
+.category-rectangle {
+  font-family: Red Rose;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 17px;
+  display: flex;
+  align-items: center;
+  color: #991414;
+  justify-content: center;
+}
+
+.category-with-date {
+  font-family: Nova Cut;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  display: flex;
+  text-align: left;
+  padding-bottom: 1vh;
+  padding-top: 1vh;
+  color: #991414;
+}
+
+.category-grey {
+  color: rgba(0, 0, 0, 0.37);
+}
+
+.readmore-btn {
+  font-family: "Nova Cut", cursive;
+  font-size: 19px;
+  background-color: #000000;
+  text-decoration: none;
+  color: white;
+  padding: 8px;
+  margin: 10px;
+  border-radius: 10px;
+}
+
+.readmore-btn:hover {
+  text-decoration: none;
+  color: white;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+}
+
+@media screen and (max-width: 769px) {
+  .featured-post-img {
+    height: 18rem;
+  }
+
+  .black-shadow-box {
+    height: 50%;
+    font-size: 1.2rem;
+    font-weight: 500;
+  }
+}
+
+@media screen and (max-width: 426px) {
+  .head {
+    display: none;
+  }
+
+  .sign-up {
+    display: none;
+  }
+
+  .check {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.68);
+  }
+
+  .black-shadow-box {
+    height: 60%;
+    font-size: 1rem;
+  }
+}

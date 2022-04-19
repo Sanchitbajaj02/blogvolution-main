@@ -1,0 +1,204 @@
+/* ------------- Footer Styling Start ------------------- */
+
+/*
+FOOTER FONTS
+font-family: 'Nova Cut', cursive;
+font-family: 'Red Hat Display', sans-serif;
+font-family: 'Red Hat Text', sans-serif;
+font-family: 'Red Rose', cursive;
+*/
+
+/* -------- Scroll to Top CSS starts here -------- */
+
+.scroll-to-top {
+  position: fixed;
+  bottom: 3%;
+  right: 3%;
+  z-index: 100;
+  width: 3.5em;
+  border-radius: 50%;
+  cursor: pointer;
+  background-color: #991414;
+}
+
+.scroll-to-top div img {
+  filter: invert(1);
+  transition: all 0.3s ease;
+}
+
+.scroll-to-top:hover {
+  background-color: #000;
+}
+
+/* -------- Scroll to Top CSS ends here -------- */
+
+#footer {
+  background-color: #000000;
+  color: white;
+}
+
+.footer-title {
+  font-family: "Nova Cut", cursive;
+  color: rgba(255, 255, 255, 1);
+  margin-top: 15px;
+  margin-bottom: 2rem;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 22px;
+}
+
+.footer-title hr {
+  margin-top: 9px;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+.footer-title hr::before {
+  border: 1px solid #da3232;
+  content: "";
+  display: block;
+  height: 0px;
+  margin-top: -1px;
+  margin-left: -1px;
+  width: 90px;
+  z-index: 1;
+}
+
+/* footer section 1 */
+
+.footer-social {
+  display: flex;
+  justify-content: space-around;
+  margin: 3rem 0;
+}
+
+.footer-about-text {
+  font-family: "Red Hat Display";
+  font-size: 16px;
+  color: white;
+}
+
+/* footer section 2 */
+
+.footer-connect-text {
+  font-family: "Red Hat Display";
+  font-size: 20px;
+  color: white;
+}
+
+.footer-icon-gap {
+  padding: 0 1.2rem;
+  margin-bottom: 2rem;
+}
+
+/* footer section 3 */
+
+.footer-form-group {
+  margin: 1rem 0;
+}
+
+.footer-form-group input[type="email"] {
+  background-color: rgba(255, 255, 255, 0.25);
+  color: white;
+  border: 0px;
+  width: 95%;
+  border-radius: 0px;
+}
+
+.footer-form-group input[type="email"]:focus {
+  background-color: rgba(255, 255, 255, 0.25);
+  color: white;
+}
+
+.footer-form-group textarea[name="message"] {
+  background-color: rgba(255, 255, 255, 0.25);
+  color: white;
+  border: 0px;
+  height: 100%;
+  width: 95%;
+  display: flex;
+  justify-content: center;
+}
+
+.submit-btn {
+  background: #991414;
+  width: 95%;
+  text-align: center;
+  font-family: Red Rose;
+  color: #ffffff;
+  font-size: 1.2rem;
+  margin: 1rem 0;
+  display: flex;
+  justify-content: center;
+}
+
+@media screen and (max-width: 767px) {
+  .footer-form-group input[type="email"] {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .footer-form-group textarea[name="message"] {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .submit-btn {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+/* copyright section */
+
+.copyrights p {
+  text-align: center;
+  font-size: 16px;
+  margin: 0;
+  padding: 1rem 0;
+}
+
+.copyrights hr {
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  margin: 0 3rem;
+}
+
+/* ------------- Footer Styling End ------------------- */
+
+@media screen and (max-width: 576px) {
+  .top-right-btns {
+    margin: 0;
+    justify-content: space-around;
+  }
+
+  .format-heading {
+    font-family: Boogaloo;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 50px;
+  }
+
+  .small-heading {
+    font-size: 1.5rem;
+  }
+
+  .centered {
+    font-size: 1rem;
+  }
+
+  .temp-2 {
+    display: none;
+  }
+
+  .main-menubar li {
+    text-align: center;
+  }
+  .format-card-image {
+    width: 16rem;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .footer-connect-text {
+    font-size: 1rem;
+  }
+}

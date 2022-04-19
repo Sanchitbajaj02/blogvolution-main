@@ -1,0 +1,189 @@
+.latestPosts-title {
+  margin-bottom: 37px;
+  /* display: flex; */
+  text-align: center;
+}
+.latestPosts hr {
+  margin-top: 150px;
+}
+
+.latestPosts .row {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 10px !important;
+}
+
+.latestPosts .row .col-md-6 img {
+  height: 110px !important;
+}
+
+.latestPosts .row .col-md-6 h6 {
+  font-family: "Red Rose", cursive;
+  size: 17px;
+
+  font-weight: 400px;
+  text-align: left;
+  margin-left: -10px;
+  margin-right: -10px;
+}
+
+.latestPosts .row .col-md-6 p {
+  color: rgba(0, 0, 0, 0.68);
+  font-family: "Red Rose", cursive;
+  font-weight: 400px;
+  size: 12px !important;
+  line-height: 15px;
+  text-align: left;
+  margin-left: -10px;
+  margin-right: -10px;
+}
+
+.row-md-3 hr {
+  border: 0.5px solid #991414;
+  margin-bottom: -1px;
+}
+
+.categories {
+  text-align: center;
+  margin-bottom: 70px;
+  margin-top: -15px;
+}
+
+.social-blogpost {
+  display: flex;
+  justify-content: space-between;
+}
+
+.connectAndFollow-title {
+  margin-bottom: 28px;
+}
+
+.fitness-title {
+  font-family: "Nova Cut", cursive;
+  font-size: 19px;
+  color: #e5e5e5;
+}
+
+.blog-header-img {
+  width: 90%;
+}
+
+.blog-text {
+  font-size: 18px;
+  padding: 20px 0;
+  padding-right: 3rem;
+  text-align: justify;
+}
+
+.blog-like {
+  text-align: center;
+  padding-bottom: 1%;
+  /* display: flex; */
+  font-family: "Red Rose", cursive;
+}
+
+/* Shadow text of By and On */
+.shadow-text {
+  color: #991414;
+}
+
+.connectAndFollow-title {
+  margin-bottom: 28px;
+}
+.social-blogpost {
+  display: flex;
+  justify-content: space-between;
+}
+
+.socials {
+  color: black !important;
+}
+.categories .row-md-4 {
+  margin-bottom: 100px !important;
+}
+
+.categories .row-md-4 img {
+  height: 120px !important;
+}
+
+.categories-title {
+  margin-bottom: 60px;
+}
+
+.textblock {
+  margin-top: -80px;
+  font-family: "Redressed", cursive;
+}
+
+.textblock span {
+  background-color: white;
+  padding: 2px 25px 2px 25px;
+  transition: all 0.5s ease;
+}
+
+.textblock span:hover {
+  color: white;
+  background-color: #991414;
+}
+
+.latestPosts-title {
+  margin-bottom: 37px;
+}
+
+.latestPosts hr {
+  margin-top: 150px;
+}
+/* 
+.latestPosts .row-md-4 {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 10px !important;
+}
+
+.latestPosts .row-md-4 .col-md-6 img {
+  height: 110px !important;
+}
+
+.latestPosts .row-md-4 .col-md-6 h6 {
+  font-family: "Red Rose", cursive;
+  size: 17px;
+  font-weight: 400px;
+  text-align: left;
+  margin-left: -10px;
+  margin-right: -10px;
+}
+
+.latestPosts .row-md-4 .col-md-6 p {
+  color: rgba(0, 0, 0, 0.68);
+  font-family: "Red Rose", cursive;
+  font-weight: 400px;
+  size: 12px !important;
+  text-align: left;
+  margin-left: -10px;
+  margin-right: -10px;
+} */
+
+@media screen and (max-width: 768px) {
+  .blog-header-img {
+    width: 100%;
+    margin: auto;
+    padding-top: 1rem;
+    /* text-align: center; */
+  }
+
+  .blog-text {
+    padding: 0;
+    text-align: justify;
+    margin: 2rem 0;
+  }
+}
+
+/* ======= Comment Section CSS starts ======= */
+.comment-box {
+  box-shadow: inset 0 1px 4px rgba(218, 50, 50, 0.2);
+  margin: 2rem 1rem 2rem 0;
+  border-radius: 10px;
+  padding: 12px;
+}
+
+/* ======= Comment Section CSS ends ======= */
