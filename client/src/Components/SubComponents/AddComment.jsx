@@ -49,25 +49,28 @@ const AddComment = ({ slug }) => {
     <div className="comment">
       <div className="add-comment">
         <h3>Comments</h3>
-        <form className="form-center mr-2" onSubmit={handleSubmit}>
-          <div className="form-group">
-            <textarea
-              className="form-control"
-              id="comment"
-              name="comment"
-              rows="3"
-              placeholder="Add your comment"
-              onChange={handleChange}></textarea>
-          </div>
 
-          <div className="form-group">
-            <button
-              type="submit"
-              className="btn bg-dark-red btn-sm edit-font mb-2">
-              Add Comment
-            </button>
-          </div>
-        </form>
+        {context.credentials?.token ? (
+          <form className="form-center mr-2" onSubmit={handleSubmit}>
+            <div className="form-group">
+              <textarea
+                className="form-control"
+                id="comment"
+                name="comment"
+                rows="3"
+                placeholder="Add your comment"
+                onChange={handleChange}></textarea>
+            </div>
+
+            <div className="form-group">
+              <button
+                type="submit"
+                className="btn bg-dark-red btn-sm edit-font mb-2">
+                Add Comment
+              </button>
+            </div>
+          </form>
+        ) : null}
       </div>
 
       {comments.map((item) => {

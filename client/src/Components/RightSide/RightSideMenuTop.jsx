@@ -25,7 +25,7 @@ const RightSideMenuTop = (props) => {
           }}
         ></h5> */}
       </div>
-      <div className="row-md-3 categories">
+      {/* <div className="row-md-3 categories">
         <hr />
         <h4 className="connectAndFollow-title border">Connect And Follow</h4>
         <div className="social-blogpost">
@@ -45,7 +45,7 @@ const RightSideMenuTop = (props) => {
             <i className="fa fa-rss-square"></i>
           </div>
         </div>
-      </div>
+      </div> */}
     </React.Fragment>
   );
 };

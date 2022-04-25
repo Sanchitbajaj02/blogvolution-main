@@ -120,8 +120,7 @@ const FooterComponent = () => {
                   Haryana
                 </div>
                 <div className="footer-icon-gap">
-                  <i className="fa fa-phone-alt fa-lg mr-3"></i> +91 -
-                  +91-0123456789
+                  <i className="fa fa-phone-alt fa-lg mr-3"></i>+91-0123456789
                 </div>
                 <div className="footer-icon-gap">
                   <i className="fa fa-envelope fa-lg mr-3"></i>{" "}

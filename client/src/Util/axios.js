@@ -1,9 +1,10 @@
 import axios from "axios";
 
-// const baseURL = "http://192.168.65.1:3001";
-// const baseURL = "http://20.231.39.136:3001";
-// const baseURL = "https://rccblog.raviprakashdev.com/";
+// localhost
 const baseURL = "http://localhost:3001";
+
+// server
+// const baseURL = "http://20.232.152.9/server";
 // TODO: add ip address to the request
 
 let api = axios.create({
