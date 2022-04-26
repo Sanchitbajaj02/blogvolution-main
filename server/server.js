@@ -28,15 +28,16 @@ const tokenMiddleware = require("./middleware/token");
 
 // api route
 const apiRouter = require("./routes/api");
-app.use("/apis", apiRouter);
+// app.use("/apis", apiRouter);
+app.use("/server/apis", apiRouter);
 
 // blogs route
 const blogRouter = require("./routes/blog");
-app.use("/blogs", blogRouter);
+app.use("/server/blogs", blogRouter);
 
 // users route
 const userRouter = require("./routes/user");
-app.use("/users", userRouter);
+app.use("/server/users", userRouter);
 
 // verify;
 app.get("/test", tokenMiddleware.jwtVerification, (req, res) => {
