@@ -3,6 +3,7 @@ import { showComments } from "../../Util/axios";
 import axios from "axios";
 import { BlogContext } from "../../Context/BlogContext";
 import { toast } from "react-toastify";
+import baseURI from "../../Util/baseURI";
 
 const AddComment = ({ slug }) => {
   const [newComment, setNewComment] = useState({ comment: "" });
@@ -24,7 +25,8 @@ const AddComment = ({ slug }) => {
     event.preventDefault();
 
     axios({
-      url: `http://localhost:3001/apis/addComment/${slug}`,
+      // url: `http://20.232.152.9/server/apis/addComment/${slug}`,
+      url: `${baseURI}server/apis/addComment/${slug}`,
       method: "POST",
       data: newComment,
       headers: {

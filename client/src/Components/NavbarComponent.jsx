@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from "react";
 import {
-  Collapse,Modal,ModalBody,
+  Collapse,
+  Modal,
+  ModalBody,
   Navbar,
   NavbarToggler,
   Nav,
@@ -37,8 +39,11 @@ const NavbarComponent = () => {
       <Navbar light expand="md">
         <Container>
           <NavbarToggler onClick={toggle} />
-          <Collapse isOpen={isOpen} className="main-menubar d-none d-md-inline" navbar>
-            <Nav navbar >
+          <Collapse
+            isOpen={isOpen}
+            className="main-menubar d-none d-md-inline"
+            navbar>
+            <Nav navbar>
               <NavItem className="format-main-menubar">
                 <NavLink href="/home">Home</NavLink>
               </NavItem>
@@ -48,8 +53,7 @@ const NavbarComponent = () => {
               <UncontrolledDropdown
                 nav
                 inNavbar
-                className="format-main-menubar"
-              >
+                className="format-main-menubar">
                 <DropdownToggle nav caret>
                   Categories
                 </DropdownToggle>
@@ -58,8 +62,7 @@ const NavbarComponent = () => {
                     return (
                       <DropdownItem
                         href={"/category/" + data.slug}
-                        key={data.categoryId}
-                      >
+                        key={data.categoryId}>
                         {data.categoryValue}
                       </DropdownItem>
                     );
@@ -70,8 +73,7 @@ const NavbarComponent = () => {
                 return (
                   <NavItem
                     className="format-main-menubar"
-                    key={data.categoryId}
-                  >
+                    key={data.categoryId}>
                     <NavLink href={"/home#" + data.categoryValue}>
                       {data.categoryValue}
                     </NavLink>
@@ -82,51 +84,50 @@ const NavbarComponent = () => {
           </Collapse>
         </Container>
       </Navbar>
-      <Modal  id="myModal"  isOpen={isOpen} toggle={toggle}  className=" modal-dialog modal-dialog-centered" navbar>
-          <ModalBody >
+      <Modal
+        id="myModal"
+        isOpen={isOpen}
+        toggle={toggle}
+        className=" modal-dialog modal-dialog-centered"
+        navbar>
+        <ModalBody>
           <Nav navbar>
-              <NavItem className="format-main-menubar">
-                <NavLink  className="text-decoration-none" href="/home">Home</NavLink>
-              </NavItem>
-              {/* <NavItem className="format-main-menubar">
+            <NavItem className="format-main-menubar">
+              <NavLink className="text-decoration-none" href="/home">
+                Home
+              </NavLink>
+            </NavItem>
+            {/* <NavItem className="format-main-menubar">
                 <NavLink href="/blog">All Feeds</NavLink>
               </NavItem> */}
-              <UncontrolledDropdown
-                nav
-                inNavbar
-                className="format-main-menubar"
-              >
-                <DropdownToggle nav caret>
-                  Categories
-                </DropdownToggle>
-                <DropdownMenu right>
-                  {categoryData.map((data) => {
-                    return (
-                      <DropdownItem
-                        href={"/category/" + data.slug}
-                        key={data.categoryId}
-                      >
-                        {data.categoryValue}
-                      </DropdownItem>
-                    );
-                  })}
-                </DropdownMenu>
-              </UncontrolledDropdown>
-              {categoryData.map((data) => {
-                return (
-                  <NavItem
-                    className="format-main-menubar"
-                    key={data.categoryId}
-                  >
-                    <NavLink href={"/home#" + data.categoryValue}>
+            <UncontrolledDropdown nav inNavbar className="format-main-menubar">
+              <DropdownToggle nav caret>
+                Categories
+              </DropdownToggle>
+              <DropdownMenu right>
+                {categoryData.map((data) => {
+                  return (
+                    <DropdownItem
+                      href={"/category/" + data.slug}
+                      key={data.categoryId}>
                       {data.categoryValue}
-                    </NavLink>
-                  </NavItem>
-                );
-              })}
-            </Nav>
-          </ModalBody>
-          </Modal>
+                    </DropdownItem>
+                  );
+                })}
+              </DropdownMenu>
+            </UncontrolledDropdown>
+            {categoryData.map((data) => {
+              return (
+                <NavItem className="format-main-menubar" key={data.categoryId}>
+                  <NavLink href={"/home#" + data.categoryValue}>
+                    {data.categoryValue}
+                  </NavLink>
+                </NavItem>
+              );
+            })}
+          </Nav>
+        </ModalBody>
+      </Modal>
     </React.Fragment>
   );
 };

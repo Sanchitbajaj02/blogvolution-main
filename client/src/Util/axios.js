@@ -1,10 +1,10 @@
 import axios from "axios";
-
+import baseURI from "./baseURI";
 // localhost
-const baseURL = "http://localhost:3001";
+// const baseURL = "http://localhost/server";
 
 // server
-// const baseURL = "http://20.232.152.9/server";
+const baseURL = `${baseURI}server`;
 // TODO: add ip address to the request
 
 let api = axios.create({
